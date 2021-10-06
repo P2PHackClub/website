@@ -97,6 +97,39 @@
       display: block;
       padding: 10px;
     }
+
+    footer{
+      display: flex;
+      margin-top: 50px;
+      height: 80px;
+      background-color: #E07A5F;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.85em;
+      width: 100%;
+    }
+
+    .footer-text {
+      font-family: 'Rubik', sans-serif;
+      color: #fff;
+      margin: 0 10px 0 0;
+      letter-spacing: .5px;
+    }
+
+    .footer-link {
+      background-color: #936639;
+      color: #fff;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+
   </style>
 </head>
 
@@ -121,7 +154,12 @@
 
   </div>
   <br>
-  <p>Edit this site --> <a href="https://github.com/P2PHackClub/website/">https://github.com/P2PHackClub/website/</a></p>
+  <footer>
+    <div class="footer-container">
+      <p class="footer-text">This site is an open source project.</p>
+      <a class="footer-link" target="_blank" href="https://github.com/P2PHackClub/website/">Click here to contribute!</a>
+    </div>
+  </footer>
 </body>
 
 </html>
