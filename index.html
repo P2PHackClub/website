@@ -101,33 +101,44 @@
     footer{
       display: flex;
       margin-top: 50px;
-      height: 80px;
       background-color: #E07A5F;
+      color: #fff;
     }
 
     .footer-container {
+      font-family: 'Rubik', sans-serif;
       display: flex;
-      justify-content: center;
       align-items: center;
-      font-size: 0.85em;
+      flex-direction: column;
       width: 100%;
+      padding: 12px 8.33%;
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: center;
     }
 
     .footer-text {
-      font-family: 'Rubik', sans-serif;
-      color: #fff;
       margin: 0 10px 0 0;
       letter-spacing: .5px;
+      font-size: 0.85em;
     }
 
     .footer-link {
       background-color: #936639;
-      color: #fff;
+      color: inherit;
       padding: 10px;
       text-decoration: none;
       border-radius: 5px;
       letter-spacing: 1px;
       font-weight: bold;
+      font-size: 0.75em;
+    }
+
+    .copyright {
+      margin: 5px 0;
+      font-size: 1em;
     }
 
   </style>
@@ -156,8 +167,13 @@
   <br>
   <footer>
     <div class="footer-container">
-      <p class="footer-text">This site is an open source project.</p>
-      <a class="footer-link" target="_blank" href="https://github.com/P2PHackClub/website/">Click here to contribute!</a>
+      <div class="footer-top">
+        <p class="footer-text">This site is an open source project.</p>
+        <a class="footer-link" target="_blank" href="https://github.com/P2PHackClub/website/">Click to contribute!</a>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy P2P Hack Club</p>
+      </div>
     </div>
   </footer>
 </body>
