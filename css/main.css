@@ -1,0 +1,142 @@
+*{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #F4F1DE;
+  }
+
+h1 {
+  color: #81B29A;
+  font-size: 8vh;
+  margin: 2%;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  color: #F4F1DE;
+  font-family: 'Rubik', sans-serif;
+  margin: 1%;
+}
+
+hr {
+  border-color: white;
+  color: white;
+  background-color: white;
+  border: 2px solid #F2CC8F;
+}
+
+a.main {
+  background-color: #E07A5F;
+  color: #3D405B;
+  font-family: 'Rubik', sans-serif;
+  border-radius: 10pt 0pt 10pt 0pt;
+  padding: 10pt;
+  font-size: 3vw;
+  text-decoration: none;
+  transition: padding 0.7s;
+  overflow: hidden;
+}
+a.hyperlink{
+  color:#E07A5F;
+  font-weight:bold;
+  text-decoration:none;
+  
+  }
+
+div.flexcontainer {
+  display: flex;
+  flex-direction:row;
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+  margin: 2%;
+
+}
+
+div.flex-item {
+  text-align: center;
+  padding: 5px;
+  display: block;
+  margin: 5px;
+  line-height: 10vh;
+}
+
+a.main:hover {
+  text-decoration: underline;
+  padding: 15pt;
+  transition: padding 1s;
+}
+
+iframe {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 40%;
+  transition: width 0.7s, height 0.7s;
+  transition-delay: 1s;
+}
+
+iframe:hover {
+  width: 100vw;
+  height: 100vh;
+  transition: width 0.7s, height 0.7s;
+  transition-delay: 1s;
+}
+
+div.events {
+  background-color: #81B29A;
+  border-radius: 20px 0px 20px 0px;
+  width: 80vw;
+  height: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0%;
+  display: block;
+  padding: 10px;
+  transition: width 0.7s;
+  font-size: 20px;
+}
+
+div.events:hover{
+    width: 90vw;
+}
+p{
+    margin: 1%;
+}
+
+footer{
+    display: block;
+    width: fit-content;
+    text-align: center;
+    background-color: #363636;
+    padding: 2%;
+    font-size: 14px;
+    color: white;
+}
+footer hr{
+  border: 2px solid white;
+}
+footer p a{
+    color: aqua;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 760px) {
+  div.flexcontainer {
+    flex-direction: column;
+    line-height: 5vh;
+    margin: 2px;
+  }
+  iframe {
+    width: 90%;
+  }
+}
+
+
