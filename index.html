@@ -21,7 +21,10 @@
     h2 {
       color: #F4F1DE;
       font-family: 'Rubik', sans-serif;
+      text-align: center;
+      font-size: 200%;
     }
+    
 
     hr {
       border-color: white;
@@ -30,6 +33,16 @@
       border: 2px solid #F2CC8F;
     }
 
+    #hf-desc{
+
+      color: #F4F1DE;
+      font-family: 'Rubik', sans-serif;
+      text-align: center;
+      padding-top: -6%;
+      font-size: large;
+      margin: 2% 10% 2% 10%;
+
+    }
     a.main {
       background-color: #E07A5F;
       color: #3D405B;
@@ -46,7 +59,12 @@
       font-weight:bold;
       text-decoration:none;
       
-      }
+    }
+
+    a.hyperlink:hover{
+
+      color:orangered;
+    }
 
     div.gridcontainer {
       display: grid;
@@ -159,7 +177,7 @@
   <div class="events">
     <h2>Hacktoberfest</h2>
     <hr>
-    Hacktoberfest is an annual event that takes place every October in the spirit of open source and collaboration. For more information, Click <a class="hyperlink" href="https://hacktoberfest.digitalocean.com">Here!</a>
+    <p id="hf-desc">Hacktoberfest is an annual event that takes place every October in the spirit of open source and collaboration. For more information, Click <a class="hyperlink" href="https://hacktoberfest.digitalocean.com">Here!</a></p>
 
 
 
