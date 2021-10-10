@@ -273,15 +273,15 @@
     </div>
 
     <!--Arrow keys to manually move on to the next slide-->
-    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    <a class="prev" onclick="changeSlideNeg(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlidePos(1)">&#10095;</a>
   </div>
   <!--End of Slide Show Div Tags-->
   <!--Div for the dots that indicate what slide is currently active-->
   <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(0)"></span>
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
   </div>
 
 
@@ -312,46 +312,30 @@
 <script>
 // Start of JS to handle the carousel Animations
 let slideIndex = 1;
-let dots = document.getElementsByClassName("dot");
 showSlides(slideIndex);
-autoSlides();
-
-// Function to automatically move from slide to slide after 30 seconds
-function autoSlides() {
-  let i;
-  let slides = document.getElementsByClassName("SlideShow");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  timeoutHandle = window.setTimeout(autoSlides, 30000);
-}
 
 // Arrow controls and reset for the image rotation
-function changeSlide(n) {
-  showSlides(slideIndex += n);
+function changeSlidePos(n) {
   clearTimeout(timeoutHandle);
-  autoSlides();
+  showSlides(slideIndex += n);
+}
+// Arrow controls and reset for the image rotation
+function changeSlideNeg(n) {
+  clearTimeout(timeoutHandle);
+  showSlides(slideIndex -= n);
 }
 
 // Dot controls and reset for the image rotation
 function currentSlide(n) {
-  showSlides(slideIndex = n);
   clearTimeout(timeoutHandle);
-  autoSlides();
+  showSlides(slideIndex = n);
 }
 
 // Handles the color/image/text changing for the appropriate image and dot item.
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("SlideShow");
-
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -360,8 +344,11 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+  timeoutHandle = setTimeout(showSlides, 30000); // 30 second timer
 }
 </script>
 
