@@ -7,6 +7,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 
   <style>
+      *{
+          margin: 0px;
+          padding: 0px;
+      }
     body {
       background-color: #F4F1DE;
     }
@@ -16,6 +20,7 @@
       font-size: 62px;
       font-family: 'Rubik', sans-serif;
       text-align: center;
+      padding: 10px;
     }
 
     h2 {
@@ -23,6 +28,7 @@
       font-family: 'Rubik', sans-serif;
       text-align: center;
       font-size: 200%;
+      padding: 25px;
     }
     
 
@@ -30,7 +36,7 @@
       border-color: white;
       color: white;
       background-color: white;
-      border: 2px solid #F2CC8F;
+      border: 3px solid #F2CC8F;
     }
 
     #hf-desc{
@@ -38,21 +44,23 @@
       color: #F4F1DE;
       font-family: 'Rubik', sans-serif;
       text-align: left;
-      padding-top: -6%;
+      padding-top: -7%;
       font-size: large;
-      margin: 2% 10% 2% 10%;
+      margin: 2% 9% 2% 10%;
+      font-size: 20px;
 
     }
     a.main {
       background-color: #E07A5F;
       color: #3D405B;
-      font-family: 'Rubik', sans-serif;
+      font-family: 'Times New Roman', Times, serif;
       border-radius: 10pt 10pt 10pt 10pt;
       padding: 10pt;
       font-size: 3vw;
       text-decoration: none;
       transition: padding 1s;
       overflow: hidden;
+      box-shadow: 2px 2px #3D405B;
     }
     a.hyperlink{
       color:#E07A5F;
@@ -88,6 +96,7 @@
       text-decoration: underline;
       padding: 15pt;
       transition: padding 1s;
+      box-shadow: none;
     }
 
     iframe {
@@ -109,11 +118,11 @@
       background-color: #81B29A;
       border-radius: 20px 20px 20px 20px;
       width: 80vw;
-      height: 20vh;
+      height: 25vh;
       margin-left: auto;
       margin-right: auto;
       display: block;
-      padding: 10px;
+      padding: 13px;
     }
 
     footer{
@@ -138,9 +147,10 @@
     }
 
     .footer-text {
-      margin: 0 10px 0 0;
+      margin: 0 20px 0 0;
       letter-spacing: .5px;
-      font-size: 0.85em;
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
     }
 
     .footer-link {
@@ -148,15 +158,24 @@
       color: inherit;
       padding: 10px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 10px;
       letter-spacing: 1px;
-      font-weight: bold;
-      font-size: 0.75em;
+      font-weight: bolder;
+      font-size: 12px;
+      box-shadow: 0px 2px 2px white;
+      transition: all 0.1s ease-in;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .footer-link:hover{
+        background-color: white;
+        color: #936639;
+        box-shadow: 0px 2px 2px #936639;
     }
 
     .copyright {
       margin: 5px 0;
       font-size: 1em;
+      font-family: 'Times New Roman', Times, serif;
     }
 
   </style>
