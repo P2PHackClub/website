@@ -198,18 +198,15 @@
     }
 
     footer{
-      display: flex;
       margin-top: 50px;
-      background-color: #E07A5F;
+      background-color: #0a4275;
       color: #fff;
     }
 
     .footer-container {
       font-family: 'Rubik', sans-serif;
       display: flex;
-      align-items: center;
-      flex-direction: column;
-      width: 100%;
+     justify-content: space-between;
       padding: 12px 8.33%;
     }
 
@@ -234,7 +231,12 @@
       font-weight: bold;
       font-size: 0.75em;
     }
-
+     .marq{
+      background: rgba(0, 0, 0, 0.2);
+      height: 30px;
+      display: flex;
+      align-items: center;
+    }
     .copyright {
       margin: 5px 0;
       font-size: 1em;
@@ -306,6 +308,7 @@
         <p class="copyright">&copy P2P Hack Club</p>
       </div>
     </div>
+    <div class="marq"><marquee behavior="smooth" direction="">&copy P2P Hack Club</marquee></div>
   </footer>
 </body>
 
