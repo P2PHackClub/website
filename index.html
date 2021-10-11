@@ -5,12 +5,19 @@
   <meta charset="UTF-8">
   <title>P2P Hack Club</title>
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+
 
   <style>
-      *{
-          margin: 0px;
-          padding: 0px;
-      }
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
     body {
       background-color: #F4F1DE;
     }
@@ -38,7 +45,7 @@
       border: 3px solid #F2CC8F;
     }
 
-    #hf-desc{
+    #hf-desc {
       color: #F4F1DE;
       font-family: 'Rubik', sans-serif;
       text-align: left;
@@ -48,6 +55,7 @@
       font-size: 20px;
 
     }
+
     a.main {
       background-color: #E07A5F;
       color: #3D405B;
@@ -60,15 +68,16 @@
       overflow: hidden;
       box-shadow: 2px 2px #3D405B;
     }
+
     a.hyperlink {
-      color:#E07A5F;
-      font-weight:bold;
-      text-decoration:none;
-      
+      color: #E07A5F;
+      font-weight: bold;
+      text-decoration: none;
+
     }
 
-    a.hyperlink:hover{
-      color:orangered;
+    a.hyperlink:hover {
+      color: orangered;
     }
 
     div.gridcontainer {
@@ -106,7 +115,8 @@
       display: none;
     }
 
-    .prev, .next {
+    .prev,
+    .next {
       cursor: pointer;
       position: absolute;
       top: 50%;
@@ -126,7 +136,8 @@
       border-radius: 3px 0 0 3px;
     }
 
-    .prev:hover, .next:hover {
+    .prev:hover,
+    .next:hover {
       background-color: #000000;
     }
 
@@ -159,7 +170,8 @@
       transition: background-color 1.3s ease;
     }
 
-    .active, .dot:hover {
+    .active,
+    .dot:hover {
       background-color: #5b5555;
     }
 
@@ -171,13 +183,23 @@
     }
 
     @-webkit-keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
     }
 
     @keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
     }
 
     iframe {
@@ -247,10 +269,11 @@
       transition: all 0.1s ease-in;
       font-family: 'Times New Roman', Times, serif;
     }
-    .footer-link:hover{
-        background-color: white;
-        color: #936639;
-        box-shadow: 0px 2px 2px #936639;
+
+    .footer-link:hover {
+      background-color: white;
+      color: #936639;
+      box-shadow: 0px 2px 2px #936639;
     }
 
     .copyright {
@@ -259,17 +282,53 @@
       font-family: 'Times New Roman', Times, serif;
     }
 
+    .navbar-brand {
+      font-family: "Ubuntu";
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    .nav-link {
+      font-family: "Montserrat";
+      font-size: 1.5rem;
+      font-weight: 200;
+    }
+
+    .nav-item {
+      padding: 0 18px 0 0;
+    }
   </style>
+
 </head>
 
 <body>
-  <h1>P2P Hack Club</h1>
+  <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#81B29A">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">P2P Hack Club</a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Hack Club</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Meeting Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ongoing Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- <h1>P2P Hack Club</h1>
   <hr>
   <div class="gridcontainer">
     <div class="grid-item"><a class="main" href="https://google.com">About Hack Club</a></div>
     <div class="grid-item"><a class="main" href="https://google.com">Meeting Schedule</a></div>
     <div class="grid-item"><a class="main" href="https://google.com">Ongoing Projects</a></div>
-  </div>
+  </div> -->
 
   <!--Start of Slide Show Div Tags-->
   <div class="slideshow">
@@ -322,54 +381,60 @@
         <a class="footer-link" target="_blank" href="https://github.com/P2PHackClub/website/">Improve this page!</a>
         &nbsp;&nbsp;
         <p class="footer-text">If interested in contributing, <a href="https://community.p2phack.club/CONDUCT.html" target="_blank">please first read the Code of Conduct</a></p>
-      <div class="footer-bottom">
-        <p class="copyright">&copy P2P Hack Club</p>
+        <div class="footer-bottom">
+          <p class="copyright">&copy P2P Hack Club</p>
+        </div>
       </div>
-    </div>
   </footer>
 </body>
 
 <script>
-// Start of JS to handle the carousel Animations
-let slideIndex = 1;
-showSlides(slideIndex);
+  // Start of JS to handle the carousel Animations
+  let slideIndex = 1;
+  showSlides(slideIndex);
 
-// Arrow controls and reset for the image rotation
-function changeSlidePos(n) {
-  clearTimeout(timeoutHandle);
-  showSlides(slideIndex += n);
-}
-// Arrow controls and reset for the image rotation
-function changeSlideNeg(n) {
-  clearTimeout(timeoutHandle);
-  showSlides(slideIndex -= n);
-}
+  // Arrow controls and reset for the image rotation
+  function changeSlidePos(n) {
+    clearTimeout(timeoutHandle);
+    showSlides(slideIndex += n);
+  }
+  // Arrow controls and reset for the image rotation
+  function changeSlideNeg(n) {
+    clearTimeout(timeoutHandle);
+    showSlides(slideIndex -= n);
+  }
 
-// Dot controls and reset for the image rotation
-function currentSlide(n) {
-  clearTimeout(timeoutHandle);
-  showSlides(slideIndex = n);
-}
+  // Dot controls and reset for the image rotation
+  function currentSlide(n) {
+    clearTimeout(timeoutHandle);
+    showSlides(slideIndex = n);
+  }
 
-// Handles the color/image/text changing for the appropriate image and dot item.
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("SlideShow");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+  // Handles the color/image/text changing for the appropriate image and dot item.
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("SlideShow");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
+    }
+    for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    timeoutHandle = setTimeout(showSlides, 30000); // 30 second timer
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  timeoutHandle = setTimeout(showSlides, 30000); // 30 second timer
-}
 </script>
 
 </html>
