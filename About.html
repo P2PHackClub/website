@@ -1,167 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>P2P Hack Club</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
-      rel="stylesheet"
-    />
 
-    <style>
-      body {
-        background-color: #f4f1de;
+<head>
+  <meta charset="UTF-8">
+  <title>P2P Hack Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+  <style>
+      *{
+          margin: 0px;
+          padding: 0px;
       }
+    body {
+      background-color: #F4F1DE;
+    }
 
-      h1 {
-        color: #81b29a;
-        font-size: 62px;
-        font-family: "Rubik", sans-serif;
-        text-align: center;
-      }
+    h1 {
+      color: #81B29A;
+      font-size: 62px;
+      font-family: 'Rubik', sans-serif;
+      text-align: center;
+      padding: 10px;
+    }
 
-      h2 {
-        color: #f4f1de;
-        font-family: "Rubik", sans-serif;
-      }
+    h2 {
+      color: #F4F1DE;
+      font-family: 'Rubik', sans-serif;
+      text-align: center;
+      font-size: 200%;
+      padding: 25px;
+    }
 
-      hr {
-        border-color: white;
-        color: white;
+    hr {
+      /*border-color: white;*/
+      color: white;
+      background-color: white;
+      border: 3px solid #F2CC8F;
+    }
+
+    #hf-desc{
+      color: #F4F1DE;
+      font-family: 'Rubik', sans-serif;
+      text-align: left;
+      padding-top: -7%;
+      font-size: large;
+      margin: 2% 9% 2% 10%;
+      font-size: 20px;
+
+    }
+    a.main {
+      background-color: #E07A5F;
+      color: #3D405B;
+      font-family: 'Times New Roman', Times, serif;
+      border-radius: 10pt 10pt 10pt 10pt;
+      padding: 10pt;
+      font-size: 3vw;
+      text-decoration: none;
+      transition: padding 1s;
+      overflow: hidden;
+      box-shadow: 2px 2px #3D405B;
+    }
+    a.hyperlink {
+      color:#E07A5F;
+      font-weight:bold;
+      text-decoration:none;
+      
+    }
+
+    a.hyperlink:hover{
+      color:orangered;
+    }
+
+    div.gridcontainer {
+      display: grid;
+      grid-column-gap: 1px;
+      grid-template-columns: auto auto auto;
+      padding: 5px;
+      text-align: center;
+
+    }
+
+    div.grid-item {
+      text-align: center;
+      padding: 10px;
+      display: block;
+      grid-column-gap: 1px;
+      margin: 5px;
+      line-height: 60px;
+    }
+
+    a.main:hover {
+      text-decoration: underline;
+      padding: 15pt;
+      transition: padding 1s;
+      box-shadow: none;
+    }
+
+    .slideshow {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    .SlideShow {
+      display: none;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: #000000;
+    }
+
+    .slide-text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #a29a9a;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 1.3s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #5b5555;
+    }
+
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 2.5s;
+      animation-name: fade;
+      animation-duration: 2.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    iframe {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      transition: width 1s, height 1s;
+      transition-delay: 2s;
+    }
+
+    iframe:hover {
+      width: 100vw;
+      height: 100vh;
+      transition: width 1s, height 1s;
+      transition-delay: 2s;
+    }
+
+    div.events {
+      background-color: #81B29A;
+      border-radius: 20px 20px 20px 20px;
+      width: 80vw;
+      height: 25vh;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      padding: 13px;
+    }
+
+    footer {
+      display: flex;
+      margin-top: 50px;
+      background-color: #E07A5F;
+      color: #fff;
+      margin-top: 600px;
+    }
+
+    .footer-container {
+      font-family: 'Rubik', sans-serif;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      padding: 12px 8.33%;
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: center;
+
+    }
+
+    .footer-text {
+      margin: 0 20px 0 0;
+      letter-spacing: .5px;
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .footer-link {
+      background-color: #936639;
+      color: inherit;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 10px;
+      letter-spacing: 1px;
+      font-weight: bolder;
+      font-size: 12px;
+      box-shadow: 0px 2px 2px white;
+      transition: all 0.1s ease-in;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .footer-link:hover{
         background-color: white;
-        border: 2px solid #f2cc8f;
-      }
+        color: #936639;
+        box-shadow: 0px 2px 2px #936639;
+    }
 
-      a.main {
-        background-color: #e07a5f;
-        color: #3d405b;
-        font-family: "Rubik", sans-serif;
-        border-radius: 10pt 10pt 10pt 10pt;
-        padding: 10pt;
-        font-size: 3vw;
-        text-decoration: none;
-        transition: padding 1s;
-        overflow: hidden;
-      }
-      a.hyperlink {
-        color: #e07a5f;
-        font-weight: bold;
-        text-decoration: none;
-      }
+    .copyright {
+      margin: 5px 0;
+      font-size: 1em;
+      font-family: 'Times New Roman', Times, serif;
+    }
 
-      div.gridcontainer {
-        display: grid;
-        grid-column-gap: 1px;
-        grid-template-columns: auto auto auto;
-        padding: 5px;
-        text-align: center;
-      }
+  </style>
+</head>
 
-      div.grid-item {
-        text-align: center;
-        padding: 10px;
-        display: block;
-        grid-column-gap: 1px;
-        margin: 5px;
-        line-height: 60px;
-      }
-
-      a.main:hover {
-        text-decoration: underline;
-        padding: 15pt;
-        transition: padding 1s;
-      }
-
-      iframe {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        transition: width 1s, height 1s;
-        transition-delay: 2s;
-      }
-
-      iframe:hover {
-        width: 100vw;
-        height: 100vh;
-        transition: width 1s, height 1s;
-        transition-delay: 2s;
-      }
-
-      div.events {
-        background-color: #81b29a;
-        border-radius: 20px 20px 20px 20px;
-        width: 80vw;
-        height: 20vh;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        padding: 10px;
-      }
-
-      footer {
-        display: flex;
-        margin-top: 50px;
-        background-color: #e07a5f;
-        color: #fff;
-      }
-
-      .footer-container {
-        font-family: "Rubik", sans-serif;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        padding: 12px 8.33%;
-      }
-
-      .footer-top {
-        display: flex;
-        align-items: center;
-      }
-
-      .footer-text {
-        margin: 0 10px 0 0;
-        letter-spacing: 0.5px;
-        font-size: 0.85em;
-      }
-
-      .footer-link {
-        background-color: #936639;
-        color: inherit;
-        padding: 10px;
-        text-decoration: none;
-        border-radius: 5px;
-        letter-spacing: 1px;
-        font-weight: bold;
-        font-size: 0.75em;
-      }
-
-      .copyright {
-        margin: 5px 0;
-        font-size: 1em;
-      }
-    </style>
-  </head>
-
-  <body>
-    <h1>P2P Hack Club</h1>
-    <hr />
-    <div >
-        <img src="136501005-b3de69ad-8a87-4419-8b90-d7d6bb7f0d08.png" alt="" style="margin-left: 10px;width: 1450px;
-        height: 1000px;">
-    </div>
-    
-    
-    <br />
-    <footer>
-      <div class="footer-container">
-        <div class="footer-top">
-          <p class="footer-text">This site is an open source project.</p>
-        </div>
-        <div class="footer-bottom">
-          <p class="copyright">&copy P2P Hack Club</p>
-        </div>
+<body>
+  <h1>P2P Hack Club</h1>
+  <hr>
+ <div class="container"> <br><br><br><br><br><br><br>
+     <h1>UNDER CONSTRUCTION...WILL RETURN SOON</h1>
+ </div>
+  <br>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <p class="footer-text">This site is an open source project.</p>
+        <a class="footer-link" target="_blank" href="https://github.com/P2PHackClub/website/">Improve this page!</a>
+        &nbsp;&nbsp;
+        <p class="footer-text">If interested in contributing, <a href="https://community.p2phack.club/CONDUCT.html" target="_blank">please first read the Code of Conduct</a></p>
+      <div class="footer-bottom">
+        <p class="copyright">&copy P2P Hack Club</p>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
+<script>
+// Start of JS to handle the carousel Animations
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Arrow controls and reset for the image rotation
+function changeSlidePos(n) {
+  clearTimeout(timeoutHandle);
+  showSlides(slideIndex += n);
+}
+// Arrow controls and reset for the image rotation
+function changeSlideNeg(n) {
+  clearTimeout(timeoutHandle);
+  showSlides(slideIndex -= n);
+}
+
+// Dot controls and reset for the image rotation
+function currentSlide(n) {
+  clearTimeout(timeoutHandle);
+  showSlides(slideIndex = n);
+}
+
+// Handles the color/image/text changing for the appropriate image and dot item.
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("SlideShow");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  timeoutHandle = setTimeout(showSlides, 30000); // 30 second timer
+}
+</script>
+
 </html>
