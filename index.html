@@ -205,20 +205,17 @@
       display: block;
       padding: 13px;
     }
-
+    
     footer {
-      display: flex;
       margin-top: 50px;
-      background-color: #E07A5F;
+      background-color: #0a4275;
       color: #fff;
     }
 
     .footer-container {
       font-family: 'Rubik', sans-serif;
       display: flex;
-      align-items: center;
-      flex-direction: column;
-      width: 100%;
+     justify-content: space-between;
       padding: 12px 8.33%;
     }
 
@@ -252,11 +249,22 @@
         color: #936639;
         box-shadow: 0px 2px 2px #936639;
     }
+     .marq{
+      background: rgba(0, 0, 0, 0.2);
+      height: 30px;
+      display: flex;
+      align-items: center;
 
+    }
     .copyright {
       margin: 5px 0;
       font-size: 1em;
       font-family: 'Times New Roman', Times, serif;
+    }
+
+    .badge {
+      text-align: left;
+
     }
 
   </style>
@@ -264,6 +272,7 @@
 
 <body>
   <h1>P2P Hack Club</h1>
+  
   <hr>
   <div class="gridcontainer">
     <div class="grid-item"><a class="main" href="About.html" target="_blank">About Hack Club</a></div>
@@ -310,6 +319,7 @@
   <h1 style="font-size:30px;text-align:left">Events:</h1>
   <div class="events">
     <h2>Hacktoberfest</h2>
+    <div class="badge"><img src=" https://img.shields.io/github/hacktoberfest/2021/P2PHackClub/website" alt="Hacktoberfest badge"></div>
     <hr>
     <p id="hf-desc">Hacktoberfest is an annual event that takes place every October in the spirit of open source and collaboration. For more information, Click <a class="hyperlink" href="https://hacktoberfest.digitalocean.com">Here!</a></p>
 
@@ -326,6 +336,7 @@
         <p class="copyright">&copy P2P Hack Club</p>
       </div>
     </div>
+    <div class="marq"><marquee behavior="smooth" direction="">&copy P2P Hack Club</marquee></div>
   </footer>
 </body>
 
