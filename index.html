@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,9 +13,11 @@
 
 
   <style>
-    * {
-      margin: 0px;
-      padding: 0px;
+
+    {
+      margin: 0;
+      padding: 0;
+
     }
 
     body {
@@ -50,10 +52,8 @@
       font-family: 'Rubik', sans-serif;
       text-align: left;
       padding-top: -7%;
-      font-size: large;
       margin: 2% 9% 2% 10%;
       font-size: 20px;
-
     }
 
     a.main {
@@ -70,6 +70,7 @@
     }
 
     a.hyperlink {
+
       color: #E07A5F;
       font-weight: bold;
       text-decoration: none;
@@ -86,7 +87,6 @@
       grid-template-columns: auto auto auto;
       padding: 5px;
       text-align: center;
-
     }
 
     div.grid-item {
@@ -238,7 +238,7 @@
     .footer-container {
       font-family: 'Rubik', sans-serif;
       display: flex;
-     justify-content: space-between;
+      justify-content: space-between;
       padding: 12px 8.33%;
     }
 
@@ -251,7 +251,7 @@
       margin: 0 20px 0 0;
       letter-spacing: .5px;
       font-size: 20px;
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Rubik', sans-serif;
     }
 
     .footer-link {
@@ -263,26 +263,30 @@
       letter-spacing: 1px;
       font-weight: bolder;
       font-size: 12px;
-      box-shadow: 0px 2px 2px white;
+      box-shadow: 0 2px 2px white;
       transition: all 0.1s ease-in;
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Rubik', sans-serif;
     }
+
 
     .footer-link:hover {
       background-color: white;
       color: #936639;
       box-shadow: 0px 2px 2px #936639;
     }
+
      .marq{
       background: rgba(0, 0, 0, 0.2);
       height: 30px;
       display: flex;
       align-items: center;
+      font-family: 'Rubik', sans-serif;
     }
+
     .copyright {
       margin: 5px 0;
       font-size: 1em;
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Rubik', sans-serif;
     }
 
 
@@ -308,9 +312,10 @@
 
 <body>
 
+
   <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#81B29A">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">P2P Hack Club</a>
+      <a class="navbar-brand" href="#">P2P Hack Club <img src="logo.png" alt="P2P logo" title="logo" style="width:60px;height:60px;"></a>
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link" href="#">About Hack Club</a>
@@ -327,6 +332,7 @@
       </ul>
     </div>
   </nav>
+
 
   <!--Start of Slide Show Div Tags-->
   <div class="slideshow">
@@ -360,33 +366,36 @@
     <span class="dot" onclick="currentSlide(2)"></span>
   </div>
 
-
   <h1 style="font-size:30px;text-align:left">Introduction to GitHub:</h1>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <br>
   <h1 style="font-size:30px;text-align:left">Events:</h1>
+
   <div class="events">
     <h2>Hacktoberfest</h2>
     <div class="badge"><img src=" https://img.shields.io/github/hacktoberfest/2021/P2PHackClub/website" alt="Hacktoberfest badge"></div>
     <hr>
     <p id="hf-desc">Hacktoberfest is an annual event that takes place every October in the spirit of open source and collaboration. For more information, Click <a class="hyperlink" href="https://hacktoberfest.digitalocean.com">Here!</a></p>
-
   </div>
   <br>
+
   <footer>
     <div class="footer-container">
       <div class="footer-top">
         <p class="footer-text">This site is an open source project.</p>
         <a class="footer-link" target="_blank" href="https://github.com/P2PHackClub/website/">Improve this page!</a>
         &nbsp;&nbsp;
-        <p class="footer-text">If interested in contributing, <a href="https://community.p2phack.club/CONDUCT.html" target="_blank">please first read the Code of Conduct</a></p>
-        <div class="footer-bottom">
-          <p class="copyright">&copy P2P Hack Club</p>
-        </div>
+
+      </div>
+        <p class="footer-text">If interested in contributing, <a class="hyperlink" href="https://community.p2phack.club/CONDUCT.html" target="_blank">please first read the Code of Conduct</a></p>
+      <div class="footer-bottom">
+        <p class="copyright">&copy P2P Hack Club</p>
+
       </div>
     </div>
     <div class="marq"><marquee behavior="smooth" direction="">&copy P2P Hack Club</marquee></div>
   </footer>
+
 </body>
 
 <script>
