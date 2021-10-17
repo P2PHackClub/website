@@ -3,447 +3,229 @@
   <head>
     <meta charset="UTF-8" />
     <title>P2P Hack Club</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"/>
+    <!-- bootstrap style link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"/>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        background-color: #f4f1de;
-      }
-
-      h1 {
-        color: #81b29a;
-        font-size: 62px;
-        font-family: "Rubik", sans-serif;
-        text-align: center;
-        padding: 10px;
-      }
-
-      h2 {
-        color: #f4f1de;
-        font-family: "Rubik", sans-serif;
-        text-align: center;
-        font-size: 200%;
-        padding: 25px;
-      }
-
-      hr {
-        /*border-color: white;*/
-        color: white;
-        background-color: white;
-        border: 3px solid #f2cc8f;
-      }
-
-      #hf-desc {
-        color: #f4f1de;
-        font-family: "Rubik", sans-serif;
-        text-align: left;
-        padding-top: -7%;
-        margin: 2% 9% 2% 10%;
-        font-size: 20px;
-      }
-
-      /*a.main {*/
-      /*  background-color: #E07A5F;*/
-      /*  color: #3D405B;*/
-      /*  font-family: 'Times New Roman', Times, serif;*/
-      /*  border-radius: 10pt 10pt 10pt 10pt;*/
-      /*  padding: 10pt;*/
-      /*  font-size: 3vw;*/
-      /*  text-decoration: none;*/
-      /*  transition: padding 1s;*/
-      /*  overflow: hidden;*/
-      /*  box-shadow: 2px 2px #3D405B;*/
-      /*}*/
-      
-
-      /* Setting Navbar a background for a better UI and adjusting font-size and color */
-
-      .navbar::before {
-        content: "";
-        position: absolute;
-        top: 2px;
-        width: 100%;
-        height: 94%;
-        background-image: url("./img/bg.png");
-        opacity: 1;
-        z-index: -1;
-      }
-
-      .navbar,
-      .container-fluid {
-        background-color: #0a05057a;
-      }
-
-      .navbar-dark .navbar-brand {
-        color: #bcf3bb;
-        text-shadow: 1px 2px 2px #873bc8;
-        cursor: pointer;
-      }
-
-      .navbar-dark .navbar-nav .nav-link {
-        color: rgba(255, 255, 255, .95);
-        text-shadow: 2px 2px #37547a;
-        font-size: 1.2rem;
-      }
-
-      .navbar-brand img {
-        position: relative;
-        width: 50px;
-        height: 50px;
-        left: -4px;
-        top: -10px;
-        margin-right: 8px;
-      }
-
-
-      /* ***adjustments done */
-
-      a.hyperlink {
-        color: #e07a5f;
-        font-weight: bold;
-        text-decoration: none;
-      }
-
-      a.hyperlink:hover {
-        color: orangered;
-        background-color: rgba(76, 0, 130, 0.082);
-      }
-
-      /* div.gridcontainer {
-      display: grid;
-      grid-column-gap: 1px;
-      grid-template-columns: auto auto auto;
-      padding: 5px;
-      text-align: center;
-    }
-
-    div.grid-item {
-      text-align: center;
-      padding: 10px;
-      display: block;
-      grid-column-gap: 1px;
-      margin: 5px;
-      line-height: 60px;
-    } */
-
-      .fade:not(.show) {
-        opacity: 1;
-      }
-
-      .navbar-brand {
-        font-family: "Rubik", sans-serif;
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: white;
-      }
-
-      .nav-link {
-        font-family: "Rubik", sans-serif;
-        font-size: 1.5rem;
-        font-weight: 200;
-      }
-
-      .nav-item {
-        padding: 0 18px 0 0;
-      }
-
-      /*a.main:hover {*/
-      /*  text-decoration: underline;*/
-      /*  padding: 15pt;*/
-      /*  transition: padding 1s;*/
-      /*  box-shadow: none;*/
-      /*}*/
-
-      .slideshow {
-        padding-top: 30px;
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
-      }
-
-      .SlideShow {
-        display: none;
-      }
-
-      .prev,
-      .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        margin-top: -22px;
-        padding: 16px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-      }
-
-      .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-      }
-
-      .prev:hover,
-      .next:hover {
-        background-color: #000000;
-      }
-
-      .slide-text {
-        color: #f2f2f2;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-      }
-
-      .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-      }
-
-      .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #a29a9a;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 1.3s ease;
-      }
-
-      .active,
-      .dot:hover {
-        background-color: #5b5555;
-      }
-
-      .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 2.5s;
-        animation-name: fade;
-        animation-duration: 2.5s;
-      }
-
-      @-webkit-keyframes fade {
-        from {opacity: 0.4;}
-        to {opacity: 1;}
-      }
-
-      @keyframes fade {
-        from {opacity: 0.4;}
-        to {opacity: 1;}
-      }
-
-      iframe {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        transition: width 1s, height 1s;
-        transition-delay: 2s;
-      }
-
-      iframe:hover {
-        width: 100vw;
-        height: 100vh;
-        transition: width 1s, height 1s;
-        transition-delay: 2s;
-      }
-
-      div.events {
-        background-color: #81b29a;
-        border-radius: 20px 20px 20px 20px;
-        width: 80vw;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        padding: 13px;
-      }
-
-      footer {
-        margin-top: 50px;
-        background-color: #0a4275;
-        color: #fff;
-      }
-
-      .footer-container {
-        font-family: "Rubik", sans-serif;
-        display: flex;
-        justify-content: space-between;
-        padding: 12px 8.33%;
-      }
-
-      .footer-top {
-        display: flex;
-        align-items: center;
-      }
-
-      .footer-text {
-        margin: 0 20px 0 0;
-        letter-spacing: 0.5px;
-        font-size: 20px;
-        font-family: "Rubik", sans-serif;
-      }
-
-      .footer-link {
-        background-color: #936639;
-        color: inherit;
-        padding: 10px;
-        text-decoration: none;
-        border-radius: 10px;
-        letter-spacing: 1px;
-        font-weight: bolder;
-        font-size: 12px;
-        box-shadow: 0 2px 2px white;
-        transition: all 0.1s ease-in;
-        font-family: "Rubik", sans-serif;
-      }
-
-      .footer-link:hover {
-        background-color: white;
-        color: #936639;
-        box-shadow: 0 2px 2px #936639;
-      }
-
-      .marq {
-        background: rgba(0, 0, 0, 0.2);
-        height: 30px;
-        display: flex;
-        align-items: center;
-        font-family: "Rubik", sans-serif;
-      }
-
-      .copyright {
-        margin: 5px 0;
-        font-size: 1em;
-        font-family: "Rubik", sans-serif;
-      }
-
-      .badge {
-        text-align: left;
-      }
-    </style>
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="logo.png" alt="P2P logo" title="logo" />P2P Hack Club</a>
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="under.html">About Hack Club</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="under.html">Meeting Schedule</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="under.html">Ongoing Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="under.html">Contact Us</a>
-          </li>
-        </ul>
+    <!------------ navigation start ------------>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="./img/logo/logo.png" alt="P2P Hacker Club logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="under.html">About Hack Club</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="under.html">Meeting Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="under.html">Ongoing Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="under.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
+    <!------------ navigation end ------------>
 
-    <!-- <img src="logo.png" alt="P2P logo" title="logo" style="width:60px;height:60px;"> -->
-    <!-- <hr>
-  <div class="gridcontainer">
-    <div class="grid-item"><a class="main" href="under.html">About Hack Club</a></div>
-    <div class="grid-item"><a class="main" href="under.html">Meeting Schedule</a></div>
-    <div class="grid-item"><a class="main" href="under.html">Ongoing Projects</a></div>
-  </div> -->
-
-    <!--Start of Slide Show Div Tags-->
-    <div class="slideshow" data-interval="false">
-      <div class="SlideShow fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="./img/space1.jpg" alt="Picture of Space #1" style="width: 100%"/>
-        <div class="slide-text">Beautiful Space #1</div>
+    <!------------ Slide show start ----------->
+    <div class="container">
+      <h1 class="text-left">Slide Show Beautiful Space</h1>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/space1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h5>Beautiful space 1</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/space2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h5>Beautiful space 2</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/space3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h5>Beautiful space 3</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-
-      <div class="SlideShow fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="./img/space2.jpg" alt="Picture of Space #2" style="width: 100%"/>
-        <div class="slide-text">Beautiful Space #2</div>
-      </div>
-
-      <div class="SlideShow fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="./img/space3.jpg" alt="Picture of Space #3" style="width: 100%"/>
-        <div class="slide-text">Beautiful Space #3</div>
-      </div>
-
-      <!--Arrow keys to manually move on to the next slide-->
-      <a class="prev" onclick="changeSlideNeg(-1)">&#10094;</a>
-      <a class="next" onclick="changeSlidePos(1)">&#10095;</a>
     </div>
-    <!--End of Slide Show Div Tags-->
+    <!----------------- SlideShow end ----------------->
 
-    <!--Div for the dots that indicate what slide is currently active-->
-    <div style="text-align: center">
-      <span class="dot" onclick="currentSlide(0)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-    </div>
+    <!-- --------- MAIN BODY OF THE WEBPAGE ------------ -->
+    <main>
+      <!-- ------- START SECTION--1 --------- -->
+      <section id="section--1">
+        <div class="container">
+          <h1>Introduction to GitHub</h1>
+          <p id="hf-desc" class="text-centerd mb-5">
+            Learn what is github and how you can use this to contribute to the
+            open source.
+          </p>
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 col-md-12 text-left">
+              <h4 class="mb-4">Github Basics Video</h4>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube-nocookie.com/embed/w3jLJU7DT5E"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-12">
+              <h4>Quick Introduction</h4>
+              <p class="github--intro">
+                Github is an intricate platform that fosters collaboration and
+                communication between developers. GitHub has a number of useful
+                features that enable development teams to work together on the
+                same project and easily create new versions of software without
+                disrupting the current versions, but it doesn't stop there.
+              </p>
+              <a
+                class="read-more"
+                href="https://lab.github.com/githubtraining/introduction-to-github"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ------- END SECTION--1 --------- -->
 
-    <h1 style="font-size: 30px; text-align: left">Introduction to GitHub:</h1>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/w3jLJU7DT5E"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-    <br />
-    <h1 style="font-size: 30px; text-align: left">Events:</h1>
+      <!-- ------- START SECTION--2 --------- -->
+      <section id="section--2">
+        <div class="container">
+          <h1>Events</h1>
+          <div class="events">
+            <h2>Hacktoberfest</h2>
+            <div class="badge">
+              <img
+                src=" https://img.shields.io/github/hacktoberfest/2021/P2PHackClub/website"
+                alt="Hacktoberfest badge"
+              />
+            </div>
+            <hr />
+            <p id="hf-desc">
+              Hacktoberfest is an annual event that takes place every October in
+              the spirit of open source and collaboration. For more information,
+              Click
+              <a class="hyperlink" href="https://hacktoberfest.digitalocean.com"
+                >Here!</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ------- END SECTION--1 --------- -->
+    </main>
 
-    <div class="events">
-      <h2>Hacktoberfest</h2>
-      <div class="badge">
-        <img src=" https://img.shields.io/github/hacktoberfest/2021/P2PHackClub/website" alt="Hacktoberfest badge"/>
-      </div>
-      <hr />
-      <p id="hf-desc">Hacktoberfest is an annual event that takes place every October in the
-        spirit of open source and collaboration. For more information, Click
-        <a class="hyperlink" href="https://hacktoberfest.digitalocean.com">Here!</a>
-      </p>
-    </div>
-    <br />
-
+    <!-- ------- START FOOTER --------- -->
     <footer>
       <div class="footer-container">
         <div class="footer-top">
           <p class="footer-text">This site is an open source project.</p>
-          <a class="footer-link" target="_blank" href="https://github.com/P2PHackClub/website/">Improve this page!</a>
+          <a
+            class="footer-link"
+            target="_blank"
+            href="https://github.com/P2PHackClub/website/"
+            >Improve this page!</a
+          >
           &nbsp;&nbsp;
-          <p class="footer-text">If interested in contributing,
-            <a class="hyperlink" href="https://community.p2phack.club/CONDUCT.html"
-               target="_blank">please first read the Code of Conduct</a>
+          <p class="footer-text">
+            If interested in contributing,
+            <a
+              class="hyperlink"
+              href="https://community.p2phack.club/CONDUCT.html"
+              target="_blank"
+              >please first read the Code of Conduct</a
+            >
           </p>
-          <a class="footer-link" target="_blank"
-             href="https://bank.hackclub.com/donations/start/p2phackclub">Donation!</a>
+          <a
+            class="footer-link"
+            target="_blank"
+            href="https://bank.hackclub.com/donations/start/p2phackclub"
+            >Donation!</a
+          >
           &nbsp;&nbsp;
-          <p class="footer-text"><small>Hack Club is fiscally sponsored by Hack Club, a 501(c)(3)
-              nonprofit. Our registered EIN is 81-2908499.</small>
+          <p class="footer-text">
+            <small
+              >Hack Club is fiscally sponsored by Hack Club, a 501(c)(3)
+              nonprofit. Our registered EIN is 81-2908499.</small
+            >
           </p>
         </div>
         <div class="footer-bottom">
@@ -455,47 +237,12 @@
       </div>
     </footer>
   </body>
+  <!-- ------- END FOOTER--1 --------- -->
 
-  <script>
-    // Start of JS to handle the carousel Animations
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Arrow controls and reset for the image rotation
-    function changeSlidePos(n) {
-      clearTimeout(timeoutHandle);
-      showSlides((slideIndex += n));
-    }
-    // Arrow controls and reset for the image rotation
-    function changeSlideNeg(n) {
-      clearTimeout(timeoutHandle);
-      showSlides((slideIndex -= n));
-    }
-
-    // Dot controls and reset for the image rotation
-    function currentSlide(n) {
-      clearTimeout(timeoutHandle);
-      showSlides((slideIndex = n));
-    }
-
-    // Handles the color/image/text changing for the appropriate image and dot item.
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("SlideShow");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1;}
-      if (n < 1) {slideIndex = slides.length;}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1;}
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-      timeoutHandle = setTimeout(showSlides, 30000); // 30 second timer
-    }
-  </script>
+  <!-- bootstrap js link -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
 </html>
