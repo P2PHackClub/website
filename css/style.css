@@ -1,0 +1,256 @@
+/* importing fonts from google font */
+
+/* »» ROBOTO FONT and »» RUBIK FONT (Combined) */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------ VARIBLES --------------- */
+
+:root {
+  /* FONTS  */
+  --rubik: "Rubik", sans-serif;
+  --roboto: "Roboto", sans-serif;
+
+  /* COLOR */
+  --white: #fff;
+  --black: #000;
+  --h1Color: #4cbb85;
+  --h1ColorLight: #53ca90;
+  --theme: #26baff;
+  --bodyColor: #f4f1de;
+}
+
+/* TEXT SELECTION BACKGROUND COLOR  */
+::selection {
+  background: var(--h1Color);
+}
+
+/* SCROLL BAR STYLING */
+::-webkit-scrollbar {
+  width: 1vw;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--h1Color);
+  background-clip: padding-box;
+  border: 0.2vw solid var(--bodyColor);
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--bodyColor);
+  padding: 0.2vw;
+}
+
+/* GLOBAL STYLLING  */
+body {
+  background-color: var(--bodyColor);
+}
+
+h1 {
+  color: var(--h1Color);
+  font-size: 40px;
+  font-family: var(--rubik);
+  text-align: center;
+  padding: 10px;
+}
+
+h2 {
+  color: var(--bodyColor);
+  font-family: var(--rubik);
+  text-align: center;
+  font-size: 200%;
+  padding: 25px;
+}
+
+section {
+  margin-top: 5rem;
+}
+
+hr {
+  border-color: var(--white);
+  color: var(--white);
+  background-color: var(--white);
+  border: 3px solid var(--bodyColor);
+}
+
+#hf-desc {
+  font-family: var(--rubik);
+  text-align: center;
+  font-size: 20px;
+}
+
+/* -------------------------- NAVIGATION START ------------------------- */
+nav .container {
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+nav .container .navbar-brand {
+  display: flex;
+  justify-content: center;
+}
+nav .container .navbar-brand img {
+  height: 60px;
+}
+
+nav ul li a {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  margin: 0rem 1rem;
+  font-weight: medium;
+}
+nav ul li a.nav-link:hover {
+  color: var(--theme) !important;
+}
+nav ul li a:last-child {
+  margin-right: 0rem;
+}
+/* -------------------------- NAVIGATION END ------------------------- */
+
+/* ------------------------- SLIDE SHOW START --------------------  */
+.container {
+  margin-top: 2rem;
+  position: relative;
+}
+.container .carousel-inner {
+  height: 60vh;
+  border-radius: 1rem;
+}
+.container .carousel-inner .carousel-item img {
+  transform: scale(1.1);
+}
+.container .carousel-inner .carousel-item.active img {
+  transform: scale(1);
+  transition: all 2s ease-in-out;
+}
+.container .carousel-inner .carousel-item img {
+  height: 60vh;
+  object-fit: cover;
+}
+.container .carousel-inner .carousel-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #00000088;
+}
+
+.container .carousel-inner .carousel-item .carousel-caption {
+  color: #ffffff;
+  z-index: 1;
+  font-family: var(--rubik);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+.container .carousel-inner .carousel-item .carousel-caption h5 {
+  background: #ffffff2c;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/* ------------------------- SLIDE SHOW END --------------------  */
+
+/* --------------SECTION--2 YOUTUBE VIDEO --------------- */
+section#section--1 h4 {
+  font-family: var(--roboto);
+}
+section#section--1 p.github--intro {
+  font-family: var(--roboto);
+  font-size: 20px;
+  line-height: 2.5rem;
+}
+section#section--1 a.read-more {
+  font-family: var(--roboto);
+}
+iframe {
+  border-radius: 1rem;
+  box-shadow: 1px 2px 40px #d3d3d3;
+}
+
+/* ------------------ END SECTION--2 -------------------------- */
+
+/* -------------------- SECTION--3 ABOUT HACKTOBERFEST ---------------------  */
+
+div.events {
+  background-color: var(--h1ColorLight);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.events p {
+  color: var(--white);
+}
+
+/* -----------------------SECTION--3 END------------------ */
+
+/* ------------------- START FOOTER -------------------------  */
+footer {
+  margin-top: 50px;
+  background-color: #0a4275;
+  color: #fff;
+}
+
+.footer-container {
+  font-family: var(--rubik);
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 8.33%;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+}
+
+.footer-text {
+  margin: 0 20px 0 0;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  font-family: var(--rubik);
+}
+
+.footer-link {
+  background-color: #936639;
+  color: inherit;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  font-size: 12px;
+  box-shadow: 0 2px 2px var(--white);
+  transition: all 0.1s ease-in;
+  font-family: var(--rubik);
+}
+
+.footer-link:hover {
+  background-color: var(--white);
+  color: #936639;
+  box-shadow: 0 2px 2px #936639;
+}
+
+.marq {
+  background: rgba(0, 0, 0, 0.2);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  font-family: var(--rubik);
+}
+
+.copyright {
+  margin: 5px 0;
+  font-size: 1em;
+  font-family: var(--rubik);
+}
+
+.badge {
+  text-align: left;
+}
+
+/* ------------------- END FOOTER -------------------------  */
