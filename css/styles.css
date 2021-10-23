@@ -83,6 +83,14 @@ hr {
 }
 
 /* -------------------------- NAVIGATION START ------------------------- */
+.navbar{
+	position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
 nav .container {
   padding: 0 !important;
   margin-top: 0 !important;
