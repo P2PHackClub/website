@@ -1,7 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>P2P Hack Club</title>
     <link rel="shortcut icon" href="img/favicon/logo.ico" type="image/x-icon"/>
 
@@ -133,7 +135,8 @@
         <div class="container">
           <h1>Introduction to GitHub</h1>
           <p id="hf-desc" class="text-centerd mb-5">
-            Learn what GitHub is and how you can use it to contribute to open source! 
+            Learn what GitHub is and how you can use it to contribute to open
+            source!
           </p>
           <div class="row">
             <div class="col-lg-6 col-sm-12 col-md-12 text-left">
@@ -151,7 +154,11 @@
             <div class="col-lg-6 col-sm-12 col-md-12">
               <h4>Quick Introduction</h4>
               <p class="github--intro">
-                GitHub is a collaborative platform that allows users to contribute to projects seperately, and then all come together and create one main project. GitHub allows anyone who wants to contribute to something work on it, and allows them to add it to the main code, or branch. 
+                GitHub is a collaborative platform that allows users to
+                contribute to projects seperately, and then all come together
+                and create one main project. GitHub allows anyone who wants to
+                contribute to something work on it, and allows them to add it to
+                the main code, or branch.
               </p>
               <a
                 class="read-more btn btn-outline-primary"
@@ -186,6 +193,34 @@
                 >Here!</a
               >
             </p>
+            <p><strong>How to help out P2P Hack Club and win a free T-Shirt!</strong></p>
+            <p><strong>Working on your first Pull Request?</strong> You can learn how from this free series <a class="hyperlink" href="https://kcd.im/pull-request">How to Contribute to an Open Source Project on GitHub.</a></p>
+            <p>
+              Before you start, please read our <a class="hyperlink" href="http://community.p2phack.club/CONDUCT.html">Code of Conduct</a>.
+
+              <ol class="text-white">
+                <li>Choose one of our <a class="hyperlink" href="https://github.com/P2PHackClub">participating repositories</a>:
+                  <ul>
+                    <li><a class="hyperlink" href="http://community.p2phack.club/CONDUCT.html">P2PHackClub/website</a> - main website</li>
+                    <li><a class="hyperlink" href="https://github.com/P2PHackClub/hypixel-game-night-website">P2PHackClub/hypixel-game-night-website</a> - website for the HGN community event</li>
+                    <li><a class="hyperlink" href="https://github.com/P2PHackClub/among-us-game-night-website">P2PHackClub/among-us-game-night-website</a> - website for the AUGN community event</li>
+                    <li><a class="hyperlink" href="https://github.com/P2PHackClub/community">P2PHackClub/community</a> - all of P2P Hack Club's community documents</li>
+                  </ul>
+                </li>
+                <li>
+                  Look through the issues (in the issues tab), and find a feature to contribute/a bug to fix.
+                  <ul>
+                    <li><strong>TIP</strong>: Issues labeled "<a class="hyperlink" href="http://community.p2phack.club/CONDUCT.html">first-timers-only</a>" are for first time contributors. These issues are generally simple fixes to help you get the hang of the contribution process.</li>
+                    <li>If there aren't any issues, create one! There's always something to improve, even if someone hasn't asked for a specific improvement yet.</li>
+                  </ul>
+                </li>
+                <li>Address the issue by creating a pull request.</li>
+                <li>Submit the pull request for review.</li>
+                <li>Make any requested changes from project maintainers.</li>
+                <li>Booyah! Your PR is merged into the repository!</li>
+              </ol>
+
+            </p>
           </div>
         </div>
       </section>
@@ -193,44 +228,65 @@
     </main>
 
     <!-- ------- START FOOTER --------- -->
-    <footer>
-      <div class="footer-container">
-        <div class="footer-top">
-          <p class="footer-text">This site is an open source project.</p>
-          <a
-            class="footer-link"
-            target="_blank"
-            href="https://github.com/P2PHackClub/website/"
-            >Improve this page!</a
-          >
-          &nbsp;&nbsp;
-          <p class="footer-text">
-            If interested in contributing,
-            <a
-              class="hyperlink"
-              href="https://community.p2phack.club/CONDUCT.html"
-              target="_blank"
-              >please first read the Code of Conduct</a
-            >
-          </p>
-          <a
-            class="footer-link"
-            target="_blank"
-            href="https://bank.hackclub.com/donations/start/p2phackclub"
-            >Donation!</a
-          >
-          &nbsp;&nbsp;
-          <p class="footer-text">
-            <small
-              >Hack Club is fiscally sponsored by Hack Club, a 501(c)(3)
-              nonprofit. Our registered EIN is 81-2908499.</small
-            >
-          </p>
-        </div>
-        <div class="footer-bottom">
-          <p class="copyright">&copy P2P Hack Club</p>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-container">
+          <!-- FOOTER LOGO -->
+          <div class="logo-image text-center">
+            <img
+              class="footer-logo"
+              src="./img/logo/logo.png"
+              alt="P2B Hack Club Logo"
+            />
+            <p class="copyright">&copy P2P Hack Club</p>
+          </div>
+
+          <!-- FOOTER INFO AREA -->
+          <div class="row">
+            <!-- FOOTER INFO -- 1 -->
+            <div class="footer-info col-lg-4 col-md-6 col-sm-12">
+              <p class="footer-text">This site is an open source project.</p>
+              <a
+                class="footer-link btn mt-3"
+                target="_blank"
+                href="https://github.com/P2PHackClub/website/"
+                >Improve this page!</a
+              >
+            </div>
+
+            <!-- FOOTER INFO -- 2 -->
+            <div class="footer-info col-lg-4 col-md-6 col-sm-12">
+              <p class="footer-text">
+                If interested in contributing, to this project.<br />
+                <a
+                  class="hyperlink link-info"
+                  href="https://community.p2phack.club/CONDUCT.html"
+                  target="_blank"
+                  >Please first read the Code of Conduct</a
+                >
+              </p>
+            </div>
+
+            <!-- FOOTER INFO -- 3 -->
+            <div class="footer-info col-lg-4 col-md-6 col-sm-12">
+              <p class="footer-text">
+                <small
+                  >Hack Club is fiscally sponsored by Hack Club, a 501(c)(3)
+                  nonprofit. Our registered EIN is 81-2908499.</small
+                >
+              </p>
+              <a
+                class="footer-link btn mt-3"
+                target="_blank"
+                href="https://bank.hackclub.com/donations/start/p2phackclub"
+                >Donation!</a
+              >
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- MARQUEE TEXT -->
       <div class="marq">
         <marquee behavior="smooth" direction="">&copy P2P Hack Club</marquee>
       </div>

@@ -22,6 +22,7 @@
   --h1ColorLight: #53ca90;
   --theme: #26baff;
   --bodyColor: #f4f1de;
+  --footerBtn: #936639;
 }
 
 /* TEXT SELECTION BACKGROUND COLOR  */
@@ -84,7 +85,7 @@ hr {
 
 /* -------------------------- NAVIGATION START ------------------------- */
 nav .container {
-  padding: 0 !important;
+  padding-top: 0 !important;
   margin-top: 0 !important;
 }
 nav .container .navbar-brand {
@@ -96,7 +97,7 @@ nav .container .navbar-brand img {
 }
 
 nav ul li a {
-  font-family: "Rubik", sans-serif;
+  font-family: var(--rubik);
   font-size: 20px;
   margin: 0rem 1rem;
   font-weight: medium;
@@ -191,39 +192,45 @@ div.events {
 
 /* ------------------- START FOOTER -------------------------  */
 footer {
-  margin-top: 50px;
+  margin-top: 5rem;
   background-color: #0a4275;
-  color: #fff;
+}
+footer .logo-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .logo-image .copyright {
+  color: #ffffffa8;
+  font-family: var(--rubik);
+  margin-left: 2rem;
+}
+footer .logo-image img {
+  height: 60px;
+  margin-bottom: 2rem;
 }
 
 .footer-container {
   font-family: var(--rubik);
-  display: flex;
-  justify-content: space-between;
-  padding: 12px 8.33%;
+  padding: 2rem;
 }
-
-.footer-top {
-  display: flex;
-  align-items: center;
+.footer-info {
+  margin-bottom: 2rem;
 }
-
 .footer-text {
-  margin: 0 20px 0 0;
-  letter-spacing: 0.5px;
   font-size: 20px;
   font-family: var(--rubik);
+  color: var(--white);
+  margin: 0;
 }
 
 .footer-link {
-  background-color: #936639;
-  color: inherit;
-  padding: 10px;
+  background-color: var(--footerBtn);
+  color: var(--white);
   text-decoration: none;
-  border-radius: 10px;
-  letter-spacing: 1px;
-  font-weight: bolder;
-  font-size: 12px;
+  border-radius: 0.4rem;
+  font-size: 15px;
   box-shadow: 0 2px 2px var(--white);
   transition: all 0.1s ease-in;
   font-family: var(--rubik);
@@ -231,26 +238,60 @@ footer {
 
 .footer-link:hover {
   background-color: var(--white);
-  color: #936639;
-  box-shadow: 0 2px 2px #936639;
+  color: var(--footerBtn);
+  box-shadow: 0 2px 2px var(--footerBtn);
 }
 
 .marq {
   background: rgba(0, 0, 0, 0.2);
-  height: 30px;
-  display: flex;
-  align-items: center;
+  height: 2rem;
+  line-height: 2rem;
+  color: var(--white);
   font-family: var(--rubik);
-}
-
-.copyright {
-  margin: 5px 0;
-  font-size: 1em;
-  font-family: var(--rubik);
-}
-
-.badge {
-  text-align: left;
 }
 
 /* ------------------- END FOOTER -------------------------  */
+
+/* ------------------- RESPONSIVE CODES AREA -------------------- */
+
+/* ------ FOR TABLET ----------- */
+@media only screen and (max-width: 700px) {
+  /* NAVIGATION */
+
+  nav ul li a {
+    font-size: 25px;
+    margin-top: 2rem;
+  }
+
+  /* SLIDE SHOW */
+  .container .carousel-inner {
+    height: 50vh;
+    width: 100%;
+  }
+  .container .carousel-inner .carousel-item .carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+  .container .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 14px;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+  }
+
+  /* INTRODUCTION TO GITHUB SECTION */
+  iframe {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 2rem;
+  }
+  section#section--1 p.github--intro {
+    text-align: justify;
+  }
+  /* EVENT SECTION */
+  #hf-desc {
+    text-align: justify;
+  }
+
+  /* FOOTER AREA */
+}
