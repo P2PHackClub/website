@@ -130,16 +130,6 @@ nav ul li a:last-child {
   height: 60vh;
   object-fit: cover;
 }
-.container .carousel-inner .carousel-item:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #00000088;
-}
 
 .container .carousel-inner .carousel-item .carousel-caption {
   color: #ffffff;
