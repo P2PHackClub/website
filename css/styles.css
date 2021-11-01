@@ -84,6 +84,13 @@ hr {
 }
 
 /* -------------------------- NAVIGATION START ------------------------- */
+#nav-bar {
+  position: fixed;
+  z-index : 4;
+  width: 100%;
+  top: 0px;
+}
+
 nav .container {
   padding-top: 0 !important;
   margin-top: 0 !important;
