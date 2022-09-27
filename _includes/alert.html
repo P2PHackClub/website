@@ -1,0 +1,6 @@
+{% for item in site.data.alert %}
+<div class="alert alert-info" role="alert">
+    <b>{{  item.title  }}</b>
+    <p>{{ item.text }}</p>
+</div>
+{% endfor %}
