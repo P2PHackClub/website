@@ -1,5 +1,7 @@
 - name: Sprig
   link: sprig
+- name: Code of Conduct
+  link: conduct
 #- name: About
 #  link: /about.html
 #- name: Projects
