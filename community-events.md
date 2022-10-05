@@ -3,6 +3,10 @@ layout: default
 title: Community Events
 ---
 
+# Community Events
+
+On this page you'll find a list of upcoming/ongoing events and contests in our community that you might want to check out! Know of anything we haven't added yet? [Contribute to this list here](https://github.com/P2PHackClub/website/blob/main/community-events.md).
+
 ## [Hacktoberfest](https://hacktoberfest.digitalocean.com)
 
 ![Hacktoberfest badge](https://img.shields.io/github/hacktoberfest/2022/P2PHackClub/website)
@@ -27,7 +31,7 @@ Before you start, please read our [Code of Conduct](http://community.p2phack.clu
 
 ## [ALL Careers Contest](https://jbmikesell.wixsite.com/allcareerscontest)
 
-**For BVSD students, teachers, and schools as well as environmental educators in Boulder County, CO-** Win significant cash prizes and recognition in Boulder County! How can a high school education explicitly be a part of the creation of a green economy and empower young people in the process? How can environmental principles be applied to just about any career, job, or field? How can young people (of any age) be empowered to create a sustainable world by applying environmental principles to just about any career, job or task?” Students, educators, and entire BVSD high schools as well as environmental educators in Boulder County are invited to submit lessons, activities, and/or materials they develop to connect environmental knowledge and concern with careers and jobs in that green economy. The purpose of this contest is to encourage careful thought about these questions and then to inspire the creation of lessons, activities and/or materials to advance an “ALL Careers approach” to education. 
+**For BVSD students, teachers, and schools as well as environmental educators in Boulder County, CO-** Win significant cash prizes and recognition in Boulder County! How can a high school education explicitly be a part of the creation of a green economy and empower young people in the process? How can environmental principles be applied to just about any career, job, or field? How can young people (of any age) be empowered to create a sustainable world by applying environmental principles to just about any career, job or task?” Students, educators, and entire BVSD high schools as well as environmental educators in Boulder County are invited to submit lessons, activities, and/or materials they develop to connect environmental knowledge and concern with careers and jobs in that green economy. The purpose of this contest is to encourage careful thought about these questions and then to inspire the creation of lessons, activities and/or materials to advance an “ALL Careers approach” to education.
 
 Visit [ALL Careers Contest: 2022-23 School Year](https://jbmikesell.wixsite.com/allcareerscontest) for more information and submission guidelines. Questions? Contact Martin Ogle at [Martin@EntrepreneurialEarth.com](mailto:Martin@EntrepreneurialEarth.com)
 
