@@ -2,6 +2,7 @@
 layout: default
 title: Sprig
 ---
+
 # Meeting #1: Sprig (9/27/2022)
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ8Jnu6Rd0y2sc7QgNmclVTq1lWL6hHSfp2ONs2tXlblJvuYBJ_EaRAwJazROZvKBoBXocHs_d0Tzc6/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
@@ -14,18 +15,20 @@ Let's get started with some hacking! My sincerest apologies (JP writing this!), 
 
 Each Hack Club meeting is going to be directed by you! After you heard us drone on with the slide presentation for hopefully not too long, the rest of the time is up to you to hack and create cool stuff!
 
-### Each meeting this year will usually go like this:
+### Each meeting this year will usually go like this
 
 1. **5-10 minutes:** Group time where coleads present slides introducing the day's workshop.
 2. **2 minutes:** Members fill out attendance form
-    * **Why do we keep track of attendance?** Although this club is very flexible (you can come for 1 meeting or all of the meetings!), we are very data driven, so it's really helpful for us to see which meetings are well-attended.
+   - **Why do we keep track of attendance?** Although this club is very flexible (you can come for 1 meeting or all of the meetings!), we are very data driven, so it's really helpful for us to see which meetings are well-attended.
 3. **Rest of time:** Member-directed hacking!
-    * Each meeting will include a **workshop**, for this meeting we are running Sprig (more on that below!). These workshops are designed to take 15 minutes to complete a _shippable_ product. Shippable means that you are able to demo your project to other people, and you can be proud of what you built! Each workshop will then have extensions after 15 minutes, which can turn a normal project into something unique and amazing by the end of the meeting!
-    * **Each workshop is OPTIONAL!** If you are already hacking on a computer-science related project (maybe you're building your own website, app, videogame, toaster, robot, invention) then feel free to ignore the workshop and go for what you want to do!
+   - Each meeting will include a **workshop**, for this meeting we are running Sprig (more on that below!). These workshops are designed to take 15 minutes to complete a _shippable_ product. Shippable means that you are able to demo your project to other people, and you can be proud of what you built! Each workshop will then have extensions after 15 minutes, which can turn a normal project into something unique and amazing by the end of the meeting!
+   - **Each workshop is OPTIONAL!** If you are already hacking on a computer-science related project (maybe you're building your own website, app, videogame, toaster, robot, invention) then feel free to ignore the workshop and go for what you want to do!
 
 ### So... what's the workshop for today?
-# SPRIGGGGG!
-# Uh.. I mean Sprig!
+
+# SPRIGGGGG
+
+# Uh.. I mean Sprig
 
 [Sprig is a game console that you can develop for made by hack clubbers, for hack clubbers.](https://sprig.hackclub.com/)
 
@@ -34,8 +37,11 @@ You can draw, make music, and craft games in a web-based editor. If you build an
 Today, you're going to:
 
 ### 1. Make Sprig Game
+
 ### 2. Save Sprig Game
+
 ### 3. Post Sprig Game
+
 ### 4. ~~Join Squid Game~~
 
 first...
@@ -43,11 +49,11 @@ first...
 ### 1. Make Sprig Game (15 minutes)
 
 1. Go to <https://sprig.hackclub.com/> and explore the website! Learn more about the console you are developing for. If you feel so inclined, here are some guiding questions for your research!
-    * How many colors does the Sprig support?
-    * How large is the screen?
-    * What programming language does the Sprig support?
-    * How long does the battery last?
-    * What is the Sprig made from?
+   - How many colors does the Sprig support?
+   - How large is the screen?
+   - What programming language does the Sprig support?
+   - How long does the battery last?
+   - What is the Sprig made from?
 2. Go to <https://sprig.hackclub.com/gallery> and explore the gallery of Sprig games that have been created by Hack Clubbers at other clubs, all around the world! Don't spend more than 5 minutes on this step, leave some time to create your own game!
 3. When you're ready to start, enter the Sprig editor at <https://editor.sprig.hackclub.com/>.
 4. Follow the instructions in the editor to start your first game!
@@ -55,14 +61,14 @@ first...
 **Extensions:**
 Welcome to the extensions section! At the end of 15 minutes, you should have a working Sprig game (possibly through Level 6 of the instructions)! Now, it's time to make this game your own!
 
-* Try adding two players
-* Leave a trail as you move
-* Have different blocks and goal types
-* Come up with your own mechanic!
+- Try adding two players
+- Leave a trail as you move
+- Have different blocks and goal types
+- Come up with your own mechanic!
 
 The more unique the better! **You must have a unique game to be able to recieve a physical sprig from Hack Club.**
 
-### 2. Save Sprig Game (2 minutes), 
+### 2. Save Sprig Game (2 minutes)
 
 Name your game
 
@@ -86,6 +92,7 @@ All of the ships posted to the Google Classroom will be added to this website in
 Follow the instructions at <https://sprig.hackclub.com/share>.
 
 ### 4. ~~Join Squid Game~~
+
 If you made it here, you are tough enough to survive squid game. Seriously, you are amazing!
 
 ### Conclusion

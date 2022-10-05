@@ -9,6 +9,7 @@ Hello, and welcome to the home for the code that makes up P2P Hack Club's websit
 ## Contributing
 
 ### Hacktoberfest
+
 ![Hacktoberfest 2021 Banner](https://user-images.githubusercontent.com/18013689/136124188-d4fb5a94-9361-49ef-b72c-94fe8b00f0e8.png)
 ![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2021/P2PHackClub/website)
 
@@ -34,7 +35,9 @@ Before you start, please read our [Code of Conduct](http://community.p2phack.clu
 6. Booyah! Your PR is merged into the repository!
 
 ## License
+
 This project is licensed under the MIT License. For more information, please check the [LICENSE](LICENSE) file.
 
 ## Code of Conduct
+
 If you join in or contribute to the P2P Hack Club community in any way, you are encouraged to follow the Code of Conduct while doing so. Please read our Code of Conduct at http://community.p2phack.club/CONDUCT.html.
