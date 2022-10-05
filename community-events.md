@@ -50,3 +50,13 @@ Stony Brook is a national leader in STEM education. The Stony Brook Simon's STEM
 * Application support and preparation for graduate school
 
 [Apply here.](https://enroll.stonybrook.edu/register/simons-STEM-scholarship)
+
+## [National Games for Change Student Challenge](https://gamesforchange.org/studentchallenge/)
+
+The Games for Change Student Challenge is the leading national game design program that combines students’ passion for games with digital learning and civic engagement.
+
+The 2021-2022 G4C Student Challenge includes professional development in game-based learning for cohorts of teachers, in-school and after-school game-making courses, student game jams and workshops, mentorship from games industry professionals, and social impact Themes with digital resources provided by cause-based partners. The Challenge culminates in a national game design competition through which students can submit their original work for the chance to win prizes, including a $10,000 scholarship, generously provided by Take-Two Interactive. Winners are announced live during an Awards Ceremony at the end of the school year.
+
+Program participation is available nationally to all middle/high schools in the U.S., and includes a special focus on the Challenge Cities of New York City, Los Angeles, Atlanta, Detroit, Pittsburgh, and Seattle.
+
+[Learn more.](https://gamesforchange.org/studentchallenge/)
