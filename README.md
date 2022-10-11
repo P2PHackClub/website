@@ -10,10 +10,10 @@ Hello, and welcome to the home for the code that makes up P2P Hack Club's websit
 
 ### Hacktoberfest
 
-![Hacktoberfest 2021 Banner](https://user-images.githubusercontent.com/18013689/136124188-d4fb5a94-9361-49ef-b72c-94fe8b00f0e8.png)
-![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2021/P2PHackClub/website)
+![Hacktoberfest 2022 Banner](https://raw.githubusercontent.com/meerhamzadev/Hacktoberfest/main/assets/banner.jpg)
 
-Hello Hacktoberfest contributors! P2P Hack Club is participating in Hacktoberfest 2021 this year! If you didn't know, Hacktoberfest is an annual event for the month of October encouraging participation in the open source community. If you complete the 2021 challenge, you can learn a limited edition T-shirt. [For more information, you can check out the Hacktoberfest website here.](https://hacktoberfest.digitalocean.com)
+
+Hello Hacktoberfest contributors! P2P Hack Club is participating in Hacktoberfest 2022 this year! If you didn't know, Hacktoberfest is an annual event for the month of October encouraging participation in the open source community. If you complete the 2022 challenge, you can learn a limited edition T-shirt. [For more information, you can check out the Hacktoberfest website here.](https://hacktoberfest.digitalocean.com)
 
 #### How to help out P2P Hack Club and win a free T-Shirt!
 
