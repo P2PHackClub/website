@@ -1,5 +1,7 @@
 - name: Sprig
   link: sprig
+- name: Project Gallery
+  link: gallery
 - name: Code of Conduct
   link: conduct
 - name: Discord

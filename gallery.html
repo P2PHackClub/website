@@ -1,0 +1,22 @@
+---
+layout: default
+title: Site Gallery
+---
+
+<h2>{{ page.title }}</h2>
+
+<p>Here, you can find projects made by P2P Hack Club members!</p>
+
+<a href="/sprig">
+    <h3>Sprig workshop (9/27/2022)</h3>
+</a>
+<ul>
+    {% for item in site.data.gallery %}
+
+    {% if item.workshop == "sprig" %}
+    <li><a href="{{ item.link }}">"{{ item.name }}" by {{ item.author }}</a>
+    </li>
+    {% endif %}
+
+    {% endfor %}
+</ul>
