@@ -8,7 +8,29 @@ Hello, and welcome to the home for the code that makes up P2P Hack Club's websit
 
 ## Contributing
 
-### Hacktoberfest
+This website uses a technology called [Jekyll](https://jekyllrb.com/) to build its files.
+
+How to edit and contribute changes to the website:
+
+(These instructions have been written really quickly using macOS, if you can make these instructions clearer, please contribute to this repository!)
+
+1. Download [GitHub Desktop](https://desktop.github.com/)
+2. Log-in/Sign-up using a GitHub account into GitHub Desktop.
+3. On https://github.com/P2PHackClub/website, [follow these instructions](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop) to clone the repository P2PHackClub/website from GitHub to GitHub Desktop.
+4. [Follow these instructions to configure a default editor with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/configuring-and-customizing-github-desktop/configuring-a-default-editor)
+5. In the menu bar, use the "Repository" drop down menu and click "Open in [your default editor]"
+6. If your default editor includes a terminal, open it. If it doesn't, in the menu bar, use the "Repository" drop down menu and click "Open in Terminal".
+7. Install ruby (this guide for macOS is really great- https://www.moncefbelyamani.com/the-definitive-guide-to-installing-ruby-gems-on-a-mac/)
+9. Type `gem install bundler jekyll` into your terminal.
+10. Type `bundle install`
+11. Type `bundle exec jekyll serve`
+12. Navigate to http://localhost:4000 in your browser, and you should see the local version of the site!
+
+Make any changes you want in your code editor, save the files, and refresh your browser to see the changes. You can just repeat steps 11-12 to run the server again if you close your terminal.
+
+[When you're done, commit your changes to the project!](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project)
+
+<!-- ### Hacktoberfest
 
 ![Hacktoberfest 2022 Banner](https://raw.githubusercontent.com/meerhamzadev/Hacktoberfest/main/assets/banner.jpg)
 
@@ -32,7 +54,7 @@ Before you start, please read our [Code of Conduct](http://community.p2phack.clu
 3. Address the issue by creating a pull request.
 4. Submit the pull request for review.
 5. Make any requested changes from project maintainers.
-6. Booyah! Your PR is merged into the repository!
+6. Booyah! Your PR is merged into the repository! -->
 
 ## License
 
