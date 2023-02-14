@@ -177,6 +177,9 @@ section#section--1 a.read-more {
 iframe {
   border-radius: 1rem;
   box-shadow: 1px 2px 40px #d3d3d3;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ------------------ END SECTION--2 -------------------------- */
@@ -306,6 +309,4 @@ footer .logo-image img {
   #hf-desc {
     text-align: justify;
   }
-
-  /* FOOTER AREA */
 }

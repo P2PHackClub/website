@@ -1,5 +1,7 @@
 - name: Sprig
   link: sprig
+- name: Love Calculator
+  link: love-calculator
 - name: Project Gallery
   link: gallery
 - name: Code of Conduct
