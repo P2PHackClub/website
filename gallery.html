@@ -14,7 +14,7 @@ title: Site Gallery
     {% for item in site.data.gallery %}
 
     {% if item.workshop == "sprig" %}
-    <img src="{{item.image_src}} alt=Image of {{item.name}} made by {{item.author}}">
+    <img src="{{item.image_src}}" alt="Image of {{item.name}} made by {{item.author}}">
     <li><a href="{{ item.link }}">"{{ item.name }}" by {{ item.author }}</a>
     </li>
     {% endif %}
